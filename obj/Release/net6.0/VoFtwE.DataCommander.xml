@@ -4,5 +4,150 @@
         <name>VoFtwE.DataCommander</name>
     </assembly>
     <members>
+        <member name="T:VoFtwE.DataCommander.DatabaseType">
+            <summary>
+            Enumeration.DatabaseType
+            </summary>
+        </member>
+        <member name="F:VoFtwE.DataCommander.DatabaseType.MySql">
+            <summary>
+            Oracle.MySql
+            </summary>
+        </member>
+        <member name="F:VoFtwE.DataCommander.DatabaseType.MsSql">
+            <summary>
+            Microsoft.Sql
+            </summary>
+        </member>
+        <member name="F:VoFtwE.DataCommander.DatabaseType.PgSql">
+            <summary>
+            Postgre.Sql
+            </summary>
+        </member>
+        <member name="T:VoFtwE.DataCommander.Read01QueryData">
+            <summary>
+            Implementation.Read01QueryData
+            </summary>
+        </member>
+        <member name="M:VoFtwE.DataCommander.Read01QueryData.#ctor(Microsoft.Extensions.Logging.ILogger{VoFtwE.DataCommander.Read01QueryData})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:VoFtwE.DataCommander.Read01QueryData.Execute``2(System.String,``1,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+            <summary>
+            Read01QueryData
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="q"></param>
+            <param name="p"></param>
+            <param name="cS"></param>
+            <param name="cT"></param>
+            <param name="dT"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VoFtwE.DataCommander.Read02QueriesData">
+            <summary>
+            Implementation.Read02QueriesData
+            </summary>
+        </member>
+        <member name="M:VoFtwE.DataCommander.Read02QueriesData.#ctor(Microsoft.Extensions.Logging.ILogger{VoFtwE.DataCommander.Read02QueriesData})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:VoFtwE.DataCommander.Read02QueriesData.Execute``3(System.String,``2,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+            <summary>
+            Read02QueriesData
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="q"></param>
+            <param name="p"></param>
+            <param name="cS"></param>
+            <param name="cT"></param>
+            <param name="dT"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VoFtwE.DataCommander.SaveData">
+            <summary>
+            Implementation.SaveData
+            </summary>
+        </member>
+        <member name="M:VoFtwE.DataCommander.SaveData.#ctor(Microsoft.Extensions.Logging.ILogger{VoFtwE.DataCommander.SaveData})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:VoFtwE.DataCommander.SaveData.Execute``1(System.String,``0,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+            <summary>
+            SaveData
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="q">Query</param>
+            <param name="p">Parameters</param>
+            <param name="cS">ConnectionString</param>
+            <param name="ct">CommandType</param>
+            <param name="databaseType"></param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="T:VoFtwE.DataCommander.IRead01QueryData">
+            <summary>
+            Interface.Read01QueryData
+            </summary>
+        </member>
+        <member name="M:VoFtwE.DataCommander.IRead01QueryData.Execute``2(System.String,``1,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+            <summary>
+            Read01QueryData
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="U"></typeparam>
+            <param name="query"></param>
+            <param name="parameters"></param>
+            <param name="connectionString"></param>
+            <param name="commandType"></param>
+            <param name="databaseType"></param>
+            <returns>01-List.Of.Type[T]</returns>
+        </member>
+        <member name="T:VoFtwE.DataCommander.IRead02QueriesData">
+            <summary>
+            Interface.Read02QueriesData
+            </summary>
+        </member>
+        <member name="M:VoFtwE.DataCommander.IRead02QueriesData.Execute``3(System.String,``2,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+            <summary>
+            Read02QueriesData
+            </summary>
+            <typeparam name="T1"/>
+            <typeparam name="T2"/>
+            <typeparam name="U"/>
+            <param name="query"/>
+            <param name="parameters"/>
+            <param name="connectionString"/>
+            <param name="commandType"/>
+            <param name="databaseType"/>
+            <returns>02-Lists.Of.Types[T1,T2]</returns>
+        </member>
+        <member name="T:VoFtwE.DataCommander.ISaveData">
+            <summary>
+            Inteface.SaveData
+            </summary>
+        </member>
+        <member name="M:VoFtwE.DataCommander.ISaveData.Execute``1(System.String,``0,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+            <summary>
+            SaveData
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="parameters"></param>
+            <param name="connectionString"></param>
+            <param name="commandType"></param>
+            <param name="databaseType"></param>
+        </member>
     </members>
 </doc>

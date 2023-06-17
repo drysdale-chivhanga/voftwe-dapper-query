@@ -4,7 +4,7 @@
 	  <TargetFramework>net6.0</TargetFramework>
 	  <ImplicitUsings>enable</ImplicitUsings>
 	  <Nullable>enable</Nullable>
-	  <Version>1.0.0</Version>
+	  <Version>1.0.2</Version>
 	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>VoFtwE Dapper Query </Title>
@@ -14,7 +14,7 @@
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <RepositoryUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</RepositoryUrl>
 	  <PackageTags>Dapper Execute, VoFtwE</PackageTags>
-	  <PackageReleaseNotes>Data Queries.Dapper</PackageReleaseNotes>
+	  <PackageReleaseNotes>Added Read02QueriesData</PackageReleaseNotes>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <Authors>Drysdale Chivhanga</Authors>
 	  <Company>VoFtwE</Company>
@@ -26,8 +26,11 @@
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
 		<PackageReference Include="Dapper.StrongName" Version="2.0.123" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
+		<PackageReference Include="MySqlConnector" Version="2.2.6" />
+		<PackageReference Include="Npgsql" Version="7.0.4" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
 	</ItemGroup>
 
 	<ItemGroup>

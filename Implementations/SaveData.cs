@@ -1,7 +1,9 @@
 ﻿using Dapper;
 using Microsoft.Extensions.Logging;
 using MySqlConnector;
+using Npgsql;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace VoFtwE.DataCommander;
 
@@ -37,8 +39,16 @@ public class SaveData : ISaveData
                 }
                 break;
             case DatabaseType.MsSql:
+                using (IDbConnection connection = new SqlConnection(cS))
+                {
+                    await connection.ExecuteAsync(q, p, commandType: ct);
+                }
                 break;
             case DatabaseType.PgSql:
+                using (NpgsqlConnection connection = new(cS))
+                {
+                    await connection.ExecuteAsync(q, p, commandType: ct);
+                }
                 break;
             default:
                 _logger.LogError("Somehow!!! No.Database Has Been Selected");

@@ -15,7 +15,13 @@
     <tags>Dapper Execute, VoFtwE</tags>
     <repository url="https://github.com/drysdale-chivhanga/voftwe-dapper-query" />
     <dependencies>
-      <group targetFramework="net6.0" />
+      <group targetFramework="net6.0">
+        <dependency id="Dapper.StrongName" version="2.0.123" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="7.0.1" exclude="Build,Analyzers" />
+        <dependency id="MySqlConnector" version="2.2.6" exclude="Build,Analyzers" />
+        <dependency id="Npgsql" version="7.0.4" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.8.5" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>
