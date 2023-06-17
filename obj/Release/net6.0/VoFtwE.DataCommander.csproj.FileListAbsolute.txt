@@ -1,0 +1,14 @@
+K:\dhura\VoFtwE.DataCommander\bin\Release\net6.0\VoFtwE.DataCommander.deps.json
+K:\dhura\VoFtwE.DataCommander\bin\Release\net6.0\VoFtwE.DataCommander.dll
+K:\dhura\VoFtwE.DataCommander\bin\Release\net6.0\VoFtwE.DataCommander.pdb
+K:\dhura\VoFtwE.DataCommander\bin\Release\net6.0\VoFtwE.DataCommander.xml
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.csproj.AssemblyReference.cache
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.GeneratedMSBuildEditorConfig.editorconfig
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.AssemblyInfoInputs.cache
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.AssemblyInfo.cs
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.csproj.CoreCompileInputs.cache
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.dll
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\refint\VoFtwE.DataCommander.dll
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.xml
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\VoFtwE.DataCommander.pdb
+K:\dhura\VoFtwE.DataCommander\obj\Release\net6.0\ref\VoFtwE.DataCommander.dll

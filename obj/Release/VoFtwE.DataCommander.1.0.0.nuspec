@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>VoFtwE.DataCommander</id>
+    <version>1.0.0</version>
+    <title>VoFtwE Dapper Query</title>
+    <authors>Drysdale Chivhanga</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</projectUrl>
+    <description>Dapper Execution Implementations</description>
+    <releaseNotes>Data Queries.Dapper</releaseNotes>
+    <tags>Dapper Execute, VoFtwE</tags>
+    <repository url="https://github.com/drysdale-chivhanga/voftwe-dapper-query" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="K:\dhura\VoFtwE.DataCommander\bin\Release\net6.0\VoFtwE.DataCommander.dll" target="lib\net6.0\VoFtwE.DataCommander.dll" />
+    <file src="K:\dhura\VoFtwE.DataCommander\bin\Release\net6.0\VoFtwE.DataCommander.xml" target="lib\net6.0\VoFtwE.DataCommander.xml" />
+    <file src="K:\dhura\VoFtwE.DataCommander\README.md" target="\README.md" />
+    <file src="K:\dhura\icon.png" target="\icon.png" />
+  </files>
+</package>
