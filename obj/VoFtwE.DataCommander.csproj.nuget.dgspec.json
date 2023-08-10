@@ -5,7 +5,7 @@
   },
   "projects": {
     "K:\\dhura\\VoFtwE.DataCommander\\VoFtwE.DataCommander.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "restore": {
         "projectUniqueName": "K:\\dhura\\VoFtwE.DataCommander\\VoFtwE.DataCommander.csproj",
         "projectName": "VoFtwE.DataCommander",
@@ -56,14 +56,6 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.2.6, )"
-            },
-            "Npgsql": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -82,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

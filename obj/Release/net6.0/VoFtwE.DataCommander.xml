@@ -35,18 +35,18 @@
             </summary>
             <param name="logger"></param>
         </member>
-        <member name="M:VoFtwE.DataCommander.Read01QueryData.Execute``2(System.String,``1,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+        <member name="M:VoFtwE.DataCommander.Read01QueryData.ExecuteAsync``2(System.String,``1,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
             <summary>
             Read01QueryData
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="U"></typeparam>
-            <param name="q"></param>
-            <param name="p"></param>
-            <param name="cS"></param>
-            <param name="cT"></param>
-            <param name="dT"></param>
-            <returns></returns>
+            <param name="qry">Query[Raw/Stored-Procedure]</param>
+            <param name="prms">Query.Paramerters</param>
+            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
+            <param name="tCmdT">Targeted.CommandType</param>
+            <param name="tDbT">Targeted.DatabaseType</param>
+            <returns>01-List.Of.Type[T]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.Read02QueriesData">
             <summary>
@@ -59,19 +59,19 @@
             </summary>
             <param name="logger"></param>
         </member>
-        <member name="M:VoFtwE.DataCommander.Read02QueriesData.Execute``3(System.String,``2,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+        <member name="M:VoFtwE.DataCommander.Read02QueriesData.ExecuteAsync``3(System.String,``2,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
             <summary>
             Read02QueriesData
             </summary>
             <typeparam name="T1"></typeparam>
             <typeparam name="T2"></typeparam>
             <typeparam name="U"></typeparam>
-            <param name="q"></param>
-            <param name="p"></param>
-            <param name="cS"></param>
-            <param name="cT"></param>
-            <param name="dT"></param>
-            <returns></returns>
+            <param name="qry">Query[Raw/Stored-Procedure]</param>
+            <param name="prms">Query.Paramerters</param>
+            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
+            <param name="tCmdT">Targeted.CommandType</param>
+            <param name="tDbT">Targeted.DatabaseType</param>
+            <returns>02-List.Of.Type[T1,T2]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.SaveData">
             <summary>
@@ -84,16 +84,16 @@
             </summary>
             <param name="logger"></param>
         </member>
-        <member name="M:VoFtwE.DataCommander.SaveData.Execute``1(System.String,``0,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+        <member name="M:VoFtwE.DataCommander.SaveData.ExecuteAsync``1(System.String,``0,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
             <summary>
             SaveData
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="q">Query</param>
-            <param name="p">Parameters</param>
-            <param name="cS">ConnectionString</param>
-            <param name="ct">CommandType</param>
-            <param name="databaseType"></param>
+            <param name="qry">Query[Raw/Stored-Procedure]</param>
+            <param name="prms">Query.Paramerters</param>
+            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
+            <param name="tCmdT">Targeted.CommandType</param>
+            <param name="tDbT">Targeted.DatabaseType</param>
             <returns>Nothing</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.IRead01QueryData">
@@ -101,17 +101,17 @@
             Interface.Read01QueryData
             </summary>
         </member>
-        <member name="M:VoFtwE.DataCommander.IRead01QueryData.Execute``2(System.String,``1,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+        <member name="M:VoFtwE.DataCommander.IRead01QueryData.ExecuteAsync``2(System.String,``1,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
             <summary>
             Read01QueryData
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="U"></typeparam>
-            <param name="query"></param>
-            <param name="parameters"></param>
-            <param name="connectionString"></param>
-            <param name="commandType"></param>
-            <param name="databaseType"></param>
+            <param name="qry">Query[Raw/Stored-Procedure]</param>
+            <param name="prms">Query.Paramerters</param>
+            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
+            <param name="tCmdT">Targeted.CommandType</param>
+            <param name="tDbT">Targeted.DatabaseType</param>
             <returns>01-List.Of.Type[T]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.IRead02QueriesData">
@@ -119,18 +119,18 @@
             Interface.Read02QueriesData
             </summary>
         </member>
-        <member name="M:VoFtwE.DataCommander.IRead02QueriesData.Execute``3(System.String,``2,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+        <member name="M:VoFtwE.DataCommander.IRead02QueriesData.ExecuteAsync``3(System.String,``2,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
             <summary>
             Read02QueriesData
             </summary>
             <typeparam name="T1"/>
             <typeparam name="T2"/>
             <typeparam name="U"/>
-            <param name="query"/>
-            <param name="parameters"/>
-            <param name="connectionString"/>
-            <param name="commandType"/>
-            <param name="databaseType"/>
+            <param name="qry">Query[Raw/Stored-Procedure]</param>
+            <param name="prms">Query.Paramerters</param>
+            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
+            <param name="tCmdT">Targeted.CommandType</param>
+            <param name="tDbT">Targeted.DatabaseType</param>
             <returns>02-Lists.Of.Types[T1,T2]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.ISaveData">
@@ -138,16 +138,17 @@
             Inteface.SaveData
             </summary>
         </member>
-        <member name="M:VoFtwE.DataCommander.ISaveData.Execute``1(System.String,``0,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
+        <member name="M:VoFtwE.DataCommander.ISaveData.ExecuteAsync``1(System.String,``0,System.String,System.Data.CommandType,VoFtwE.DataCommander.DatabaseType)">
             <summary>
             SaveData
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="query"></param>
-            <param name="parameters"></param>
-            <param name="connectionString"></param>
-            <param name="commandType"></param>
-            <param name="databaseType"></param>
+            <param name="qry">Query[Raw/Stored-Procedure]</param>
+            <param name="prm">Query.Paramerters</param>
+            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
+            <param name="tCmdT">Targeted.CommandType</param>
+            <param name="tDbT">Targeted.DatabaseType</param>
+            <returns>Nothing</returns>
         </member>
     </members>
 </doc>

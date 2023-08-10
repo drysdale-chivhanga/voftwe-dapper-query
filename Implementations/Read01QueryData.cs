@@ -6,51 +6,55 @@ using System.Data;
 namespace VoFtwE.DataCommander;
 
 /// <summary>
-/// Implementation.SaveData
+/// Implementation.Read01QueryData
 /// </summary>
-public class SaveData : ISaveData
+public class Read01QueryData : IRead01QueryData
 {
-    readonly ILogger<SaveData> _logger;
+    readonly ILogger<Read01QueryData> _logger;
     /// <summary>
-    /// 
+    /// Constructor
     /// </summary>
     /// <param name="logger"></param>
-    public SaveData(ILogger<SaveData> logger) => _logger = logger;
+    public Read01QueryData(ILogger<Read01QueryData> logger) => _logger = logger;
+
     /// <summary>
-    /// SaveData
+    /// Read01QueryData
     /// </summary>
     /// <typeparam name="T"></typeparam>
+    /// <typeparam name="U"></typeparam>
     /// <param name="qry">Query[Raw/Stored-Procedure]</param>
     /// <param name="prms">Query.Paramerters</param>
     /// <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
     /// <param name="tCmdT">Targeted.CommandType</param>
     /// <param name="tDbT">Targeted.DatabaseType</param>
-    /// <returns>Nothing</returns>
-    public async Task ExecuteAsync<T>(string qry, T prms, string conStrng, CommandType tCmdT, DatabaseType tDbT)
+    /// <returns>01-List.Of.Type[T]</returns>
+    public async Task<IEnumerable<T>> ExecuteAsync<T, U>(string qry, U prms, string conStrng, CommandType tCmdT, DatabaseType tDbT)
     {
+        List<T> response = new();
         switch (tDbT)
         {
             case DatabaseType.MySql:
                 using (MySqlConnection connection = new(conStrng))
                 {
-                    await connection.ExecuteAsync(qry, prms, commandType: tCmdT);
+                    response = (List<T>)await connection.QueryAsync<T>(sql: qry, param: prms, commandType: tCmdT);
                 }
                 break;
             case DatabaseType.MsSql:
                 //using (IDbConnection connection = new SqlConnection(cS))
                 //{
-                //    await connection.ExecuteAsync(q, p, commandType: ct);
+                //    response = (List<T>)await connection.QueryAsync<T>(sql: q, param: p, commandType: cT);
                 //}
                 break;
             case DatabaseType.PgSql:
                 //using (NpgsqlConnection connection = new(cS))
                 //{
-                //    await connection.ExecuteAsync(q, p, commandType: ct);
+                //    response = (List<T>)await connection.QueryAsync<T>(sql: q, param: p, commandType: cT);
                 //}
                 break;
             default:
                 _logger.LogError("Somehow!!! No.Database Has Been Selected");
                 break;
         }
+        return response;
     }
 }

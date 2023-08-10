@@ -41,11 +41,11 @@
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="U"></typeparam>
-            <param name="qry">Query[Raw/Stored-Procedure]</param>
-            <param name="prms">Query.Paramerters</param>
-            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
-            <param name="tCmdT">Targeted.CommandType</param>
-            <param name="tDbT">Targeted.DatabaseType</param>
+            <param name="q">Query[Raw/Proc]</param>
+            <param name="p">Query.Paramerters</param>
+            <param name="cS">Targeted.ConnectionString</param>
+            <param name="cT">Targeted.CommandType</param>
+            <param name="dT">Targeted.DatabaseType</param>
             <returns>01-List.Of.Type[T]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.Read02QueriesData">
@@ -66,12 +66,12 @@
             <typeparam name="T1"></typeparam>
             <typeparam name="T2"></typeparam>
             <typeparam name="U"></typeparam>
-            <param name="qry">Query[Raw/Stored-Procedure]</param>
-            <param name="prms">Query.Paramerters</param>
-            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
-            <param name="tCmdT">Targeted.CommandType</param>
-            <param name="tDbT">Targeted.DatabaseType</param>
-            <returns>02-List.Of.Type[T1,T2]</returns>
+            <param name="q"></param>
+            <param name="p"></param>
+            <param name="cS"></param>
+            <param name="cT"></param>
+            <param name="dT"></param>
+            <returns></returns>
         </member>
         <member name="T:VoFtwE.DataCommander.SaveData">
             <summary>
@@ -89,11 +89,11 @@
             SaveData
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="qry">Query[Raw/Stored-Procedure]</param>
-            <param name="prms">Query.Paramerters</param>
-            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
-            <param name="tCmdT">Targeted.CommandType</param>
-            <param name="tDbT">Targeted.DatabaseType</param>
+            <param name="q">Query</param>
+            <param name="p">Parameters</param>
+            <param name="cS">ConnectionString</param>
+            <param name="ct">CommandType</param>
+            <param name="databaseType"></param>
             <returns>Nothing</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.IRead01QueryData">
@@ -107,11 +107,11 @@
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="U"></typeparam>
-            <param name="qry">Query[Raw/Stored-Procedure]</param>
-            <param name="prms">Query.Paramerters</param>
-            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
-            <param name="tCmdT">Targeted.CommandType</param>
-            <param name="tDbT">Targeted.DatabaseType</param>
+            <param name="q">Query[Raw/Proc]</param>
+            <param name="p">Query.Paramerters</param>
+            <param name="cS">Targeted.ConnectionString</param>
+            <param name="cT">Targeted.CommandType</param>
+            <param name="dT">Targeted.DatabaseType</param>
             <returns>01-List.Of.Type[T]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.IRead02QueriesData">
@@ -126,11 +126,11 @@
             <typeparam name="T1"/>
             <typeparam name="T2"/>
             <typeparam name="U"/>
-            <param name="qry">Query[Raw/Stored-Procedure]</param>
-            <param name="prms">Query.Paramerters</param>
-            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
-            <param name="tCmdT">Targeted.CommandType</param>
-            <param name="tDbT">Targeted.DatabaseType</param>
+            <param name="query"/>
+            <param name="parameters"/>
+            <param name="connectionString"/>
+            <param name="commandType"/>
+            <param name="databaseType"/>
             <returns>02-Lists.Of.Types[T1,T2]</returns>
         </member>
         <member name="T:VoFtwE.DataCommander.ISaveData">
@@ -143,12 +143,11 @@
             SaveData
             </summary>
             <typeparam name="T"></typeparam>
-            <param name="qry">Query[Raw/Stored-Procedure]</param>
-            <param name="prm">Query.Paramerters</param>
-            <param name="conStrng">Targeted.ConnectionString[PLAIN]</param>
-            <param name="tCmdT">Targeted.CommandType</param>
-            <param name="tDbT">Targeted.DatabaseType</param>
-            <returns>Nothing</returns>
+            <param name="query"></param>
+            <param name="parameters"></param>
+            <param name="connectionString"></param>
+            <param name="commandType"></param>
+            <param name="databaseType"></param>
         </member>
     </members>
 </doc>
