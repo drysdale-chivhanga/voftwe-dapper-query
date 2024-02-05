@@ -1,38 +1,39 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	  <TargetFramework>net6.0</TargetFramework>
-	  <ImplicitUsings>enable</ImplicitUsings>
-	  <Nullable>enable</Nullable>
-	  <Version>1.0.3</Version>
-	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <Title>VoFtwE Dapper Query </Title>
-	  <Description>Dapper Execution Implementations</Description>
-	  <PackageProjectUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</PackageProjectUrl>
-	  <PackageIcon>icon.png</PackageIcon>
-	  <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <RepositoryUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</RepositoryUrl>
-	  <PackageTags>Dapper Execute, VoFtwE</PackageTags>
-	  <PackageReleaseNotes>Added Read02QueriesData</PackageReleaseNotes>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <Authors>Drysdale Chivhanga</Authors>
-	  <Company>VoFtwE</Company>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>11.0.2</Version>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>VoFtwE Dapper Query </Title>
+		<Description>Dapper Execution Implementations</Description>
+		<PackageProjectUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</PackageProjectUrl>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</RepositoryUrl>
+		<PackageTags>Dapper Execute, VoFtwE</PackageTags>
+		<PackageReleaseNotes>Upadated Dapper, SqlClient</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Authors>Drysdale Chivhanga</Authors>
+		<Company>VoFtwE</Company>
+	</PropertyGroup>
 	<ItemGroup>
-		<None Include="..\icon.png">
+		<PackageReference Include="Dapper.StrongName" Version="2.1.28" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+		<PackageReference Include="MySqlConnector" Version="2.3.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Dapper.StrongName" Version="2.0.123" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
-		<PackageReference Include="MySqlConnector" Version="2.2.6" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Update="README.md">
+		<None Include="..\logo.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\dhura\\VoFtwE.DataCommander\\VoFtwE.DataCommander.csproj": {}
+    "C:\\basa\\voftwe\\voftwe-dapper-query\\VoFtwE.DataCommander.csproj": {}
   },
   "projects": {
-    "K:\\dhura\\VoFtwE.DataCommander\\VoFtwE.DataCommander.csproj": {
-      "version": "1.0.3",
+    "C:\\basa\\voftwe\\voftwe-dapper-query\\VoFtwE.DataCommander.csproj": {
+      "version": "11.0.2",
       "restore": {
-        "projectUniqueName": "K:\\dhura\\VoFtwE.DataCommander\\VoFtwE.DataCommander.csproj",
+        "projectUniqueName": "C:\\basa\\voftwe\\voftwe-dapper-query\\VoFtwE.DataCommander.csproj",
         "projectName": "VoFtwE.DataCommander",
-        "projectPath": "K:\\dhura\\VoFtwE.DataCommander\\VoFtwE.DataCommander.csproj",
+        "projectPath": "C:\\basa\\voftwe\\voftwe-dapper-query\\VoFtwE.DataCommander.csproj",
         "packagesPath": "C:\\Users\\chivr\\.nuget\\packages\\",
-        "outputPath": "K:\\dhura\\VoFtwE.DataCommander\\obj\\",
+        "outputPath": "C:\\basa\\voftwe\\voftwe-dapper-query\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,15 +47,19 @@
           "dependencies": {
             "Dapper.StrongName": {
               "target": "Package",
-              "version": "[2.0.123, )"
+              "version": "[2.1.28, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.5, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[7.0.1, )"
+              "version": "[8.0.0, )"
             },
             "MySqlConnector": {
               "target": "Package",
-              "version": "[2.2.6, )"
+              "version": "[2.3.5, )"
             }
           },
           "imports": [
@@ -74,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

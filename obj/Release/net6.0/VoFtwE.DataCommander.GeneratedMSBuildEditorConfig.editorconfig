@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VoFtwE.DataCommander
-build_property.ProjectDir = K:\dhura\VoFtwE.DataCommander\
+build_property.ProjectDir = C:\basa\voftwe\voftwe-dapper-query\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

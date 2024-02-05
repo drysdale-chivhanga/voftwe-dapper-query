@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 using MySqlConnector;
 using System.Data;
@@ -44,12 +45,12 @@ public class Read02QueriesData : IRead02QueriesData
                 }
                 break;
             case DatabaseType.MsSql:
-                //using (IDbConnection connection = new SqlConnection(cS))
-                //{
-                //    using var lists = await connection.QueryMultipleAsync(sql: q, param: p, commandType: cT);
-                //    list01 = lists.Read<T1>().ToList();
-                //    list02 = lists.Read<T2>().ToList();
-                //}
+                using (IDbConnection connection = new SqlConnection(conStrng))
+                {
+                    using var lists = await connection.QueryMultipleAsync(sql: qry, param: prms, commandType: tCmdT);
+                    list01 = lists.Read<T1>().ToList();
+                    list02 = lists.Read<T2>().ToList();
+                }
                 break;
             case DatabaseType.PgSql:
                 //using (NpgsqlConnection connection = new(cS))
