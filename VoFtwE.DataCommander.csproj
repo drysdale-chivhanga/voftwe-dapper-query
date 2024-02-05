@@ -4,7 +4,7 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Version>11.0.2</Version>
+		<Version>11.0.3</Version>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>VoFtwE Dapper Query </Title>
@@ -14,16 +14,16 @@
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/drysdale-chivhanga/voftwe-dapper-query</RepositoryUrl>
 		<PackageTags>Dapper Execute, VoFtwE</PackageTags>
-		<PackageReleaseNotes>Upadated Dapper, SqlClient</PackageReleaseNotes>
+		<PackageReleaseNotes>Changed SqlClient to System.Data.SqlClient</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Authors>Drysdale Chivhanga</Authors>
 		<Company>VoFtwE</Company>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Dapper.StrongName" Version="2.1.28" />
-		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.5" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
 		<PackageReference Include="MySqlConnector" Version="2.3.5" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
 	</ItemGroup>
 
 	<ItemGroup>

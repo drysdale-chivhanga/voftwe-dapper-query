@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\basa\\voftwe\\voftwe-dapper-query\\VoFtwE.DataCommander.csproj": {
-      "version": "11.0.2",
+      "version": "11.0.3",
       "restore": {
         "projectUniqueName": "C:\\basa\\voftwe\\voftwe-dapper-query\\VoFtwE.DataCommander.csproj",
         "projectName": "VoFtwE.DataCommander",
@@ -49,10 +49,6 @@
               "target": "Package",
               "version": "[2.1.28, )"
             },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.1.5, )"
-            },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -60,6 +56,10 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.3.5, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
